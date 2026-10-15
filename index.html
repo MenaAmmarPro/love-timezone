@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b20">
+  <meta name="description" content="Two places, one sky — live clocks for Mena and me, with sunrise, sunset and the best time to call.">
+  <title>Same Sky ✦ Love for Mena</title>
+  <link rel="canonical" href="https://menaammarpro.github.io/love-timezone/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Same Sky — for Mena">
+  <meta property="og:title" content="Same Sky ✦ Love for Mena">
+  <meta property="og:description" content="Two places, one sky — live clocks, sunrise and sunset, and the best time to call.">
+  <meta property="og:url" content="https://menaammarpro.github.io/love-timezone/">
+  <meta property="og:image" content="https://menaammarpro.github.io/love-timezone/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Two places, one sky — a live time-zone clock for Mena">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Same Sky ✦ Love for Mena">
+  <meta name="twitter:description" content="Two places, one sky — live clocks, sunrise and sunset, and the best time to call.">
+  <meta name="twitter:image" content="https://menaammarpro.github.io/love-timezone/assets/og-image.png">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/theme-main.js" defer></script>
+  <script src="js/effects.js" defer></script>
+  <script src="js/solar.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Same Sky">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">✦ Same Sky</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="#clocks">Our clocks</a>
+      <a href="#together">Together</a>
+      <a href="#details">Details</a>
+      <a href="https://menaammarpro.github.io/loveformymena/">Our little universe ↗</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme">Theme</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero tz-hero">
+      <p class="eyebrow">SAME SKY, TWO PLACES</p>
+      <div class="moon" aria-hidden="true">☾</div>
+      <p class="small-caption">However far apart the hours look, it is always the same sky.</p>
+      <h1>Same sky, <span>two places.</span></h1>
+      <p class="hero-description">
+        Your morning is my afternoon, and your night is still my day — so here
+        they are side by side, and the little window where we are both awake.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#clocks">See our clocks <span>♥</span></a>
+        <a class="button button-ghost" href="#together">Best time to call</a>
+      </div>
+      <p class="signature">Made with love, just for you <span>♥</span></p>
+    </section>
+
+    <section class="section" id="clocks">
+      <p class="eyebrow">WHERE WE ARE RIGHT NOW</p>
+      <h2>Our two <span>clocks.</span></h2>
+      <p class="section-copy">
+        Live to the second, with today's sunrise and sunset in each of our skies.
+      </p>
+
+      <div class="clock-grid">
+        <article class="clock-card" id="card-you" data-phase="night">
+          <div class="clock-sky" aria-hidden="true"></div>
+          <header class="clock-head">
+            <span class="clock-who" id="you-name">Ammar</span>
+            <span class="clock-city" id="you-city">Karachi, Pakistan</span>
+          </header>
+          <div class="clock-time">
+            <span class="clock-hm" id="you-hm">--:--</span>
+            <span class="clock-ss" id="you-ss">--</span>
+          </div>
+          <p class="clock-date" id="you-date">—</p>
+          <div class="clock-meta">
+            <span class="clock-chip" id="you-offset">UTC</span>
+            <span class="clock-chip" id="you-phase">—</span>
+          </div>
+          <p class="clock-sun" id="you-sun">Sunrise — · Sunset —</p>
+        </article>
+
+        <article class="clock-card" id="card-her" data-phase="night">
+          <div class="clock-sky" aria-hidden="true"></div>
+          <header class="clock-head">
+            <span class="clock-who" id="her-name">Mena</span>
+            <span class="clock-city" id="her-city">Bucharest, Romania</span>
+          </header>
+          <div class="clock-time">
+            <span class="clock-hm" id="her-hm">--:--</span>
+            <span class="clock-ss" id="her-ss">--</span>
+          </div>
+          <p class="clock-date" id="her-date">—</p>
+          <div class="clock-meta">
+            <span class="clock-chip" id="her-offset">UTC</span>
+            <span class="clock-chip" id="her-phase">—</span>
+          </div>
+          <p class="clock-sun" id="her-sun">Sunrise — · Sunset —</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="together">
+      <p class="eyebrow">THE OVERLAP</p>
+      <h2>The best time <span>to call.</span></h2>
+      <p class="section-copy" id="together-copy">
+        The hours we are both awake, marked out across a single day.
+      </p>
+
+      <div class="call-card" id="call-card" data-state="waiting">
+        <p class="call-status" id="call-status" aria-live="polite">Checking the hours…</p>
+        <p class="call-next" id="call-next"></p>
+      </div>
+
+      <div class="timeline-scroll">
+        <div class="timeline" id="timeline" role="img" aria-label="A day of hours, showing when you are both awake"></div>
+      </div>
+      <div class="timeline-scale" id="timeline-scale" aria-hidden="true"></div>
+
+      <ul class="legend">
+        <li><span class="dot dot-awake"></span> both awake</li>
+        <li><span class="dot dot-her"></span> one of us awake</li>
+        <li><span class="dot dot-asleep"></span> both asleep</li>
+        <li><span class="dot dot-now"></span> this hour (your time)</li>
+      </ul>
+      <p class="section-note" id="timeline-note"></p>
+    </section>
+
+    <section class="section" id="details">
+      <p class="eyebrow">JUST FOR US</p>
+      <h2>Our <span>details.</span></h2>
+      <p class="section-copy">
+        Your names and the hours you are usually awake. Saved on this device
+        only — nothing ever leaves your browser.
+      </p>
+
+      <div class="settings-card">
+        <div class="field-row">
+          <label class="field">
+            <span>Your name</span>
+            <input type="text" id="you-name-input" maxlength="40" placeholder="Ammar" aria-label="Your name">
+          </label>
+          <label class="field">
+            <span>Her name</span>
+            <input type="text" id="her-name-input" maxlength="40" placeholder="Mena" aria-label="Her name">
+          </label>
+        </div>
+
+        <div class="field-row">
+          <label class="field">
+            <span>You are awake from</span>
+            <input type="number" id="you-wake-start" min="0" max="23" inputmode="numeric" aria-label="Your waking hour starts">
+          </label>
+          <label class="field">
+            <span>until</span>
+            <input type="number" id="you-wake-end" min="1" max="24" inputmode="numeric" aria-label="Your waking hour ends">
+          </label>
+        </div>
+
+        <div class="field-row">
+          <label class="field">
+            <span>She is awake from</span>
+            <input type="number" id="her-wake-start" min="0" max="23" inputmode="numeric" aria-label="Her waking hour starts">
+          </label>
+          <label class="field">
+            <span>until</span>
+            <input type="number" id="her-wake-end" min="1" max="24" inputmode="numeric" aria-label="Her waking hour ends">
+          </label>
+        </div>
+
+        <div class="settings-actions">
+          <button class="button button-primary" id="save-details" type="button">Save our details</button>
+          <button class="button button-ghost" id="reset-details" type="button">Reset</button>
+          <button class="button button-ghost" id="share-button" type="button">Share this page</button>
+        </div>
+        <p class="settings-note" id="save-note" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with care <span>♥</span> for Mena</p>
+    <p class="footer-small">A little universe of its own ✦</p>
+  </footer>
+</body>
+</html>
