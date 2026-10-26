@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE = "same-sky-v1";
+const CACHE = "same-sky-v2";
 
 const ASSETS = [
   "./",
